@@ -1,6 +1,6 @@
 import { FormBox } from './ContactForm.styled';
 import { Component } from 'react';
-
+import { Formik } from 'formik';
 export class ContactForm extends Component {
   state = {
     name: '',
