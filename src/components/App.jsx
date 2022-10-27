@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { nanoid } from 'nanoid';
 import { Form } from './App.styled';
 import { Filter } from './Filter';
@@ -6,6 +7,12 @@ import { ContactForm } from 'components/ContactForm/';
 import { ContactList } from 'components/ContactList/';
 
 export class App extends React.Component {
+  static propTypes = {
+    submitProp: PropTypes.func,
+    onChange: PropTypes.func,
+    contacts: PropTypes.func,
+    onDeleteContact: PropTypes.func,
+  };
   state = {
     contacts: [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },

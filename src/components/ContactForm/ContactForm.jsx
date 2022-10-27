@@ -1,7 +1,13 @@
+import PropTypes from 'prop-types';
+
 import { FormBox } from './ContactForm.styled';
 import { Component } from 'react';
-import { Formik } from 'formik';
 export class ContactForm extends Component {
+  static propTypes = {
+    onSubmit: PropTypes.func,
+    value: PropTypes.string,
+    onChange: PropTypes.func,
+  };
   state = {
     name: '',
     number: '',
