@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Form } from 'formik';
 
-export const FormBox = styled.form`
+export const FormBox = styled(Form)`
   border: 1px solid black;
   width: 300px;
   height: 250px;
