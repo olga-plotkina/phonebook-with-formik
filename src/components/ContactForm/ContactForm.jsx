@@ -4,8 +4,8 @@ import { Formik, Field, ErrorMessage } from 'formik';
 import { FormBox } from './ContactForm.styled';
 
 const schema = Yup.object().shape({
-  name: yup.string().required(),
-  number: yup.number().required(),
+  name: Yup.string().required(),
+  number: Yup.number().required(),
 });
 const initialValues = {
   name: '',
